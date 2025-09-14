@@ -1,0 +1,6 @@
+print("Enter first number")
+num1=input()
+print("Enter second number")
+num2=input()
+res=float(num1) + float(num2)
+print("sum of two numbers : ",res)
