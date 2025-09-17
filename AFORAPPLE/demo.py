@@ -27,5 +27,12 @@ else :
 
 # tuple program
 
-t=("A","B","A")
-print(t.count("A"))
+# t=("A","B","A")
+# print(t.count("A"))
+
+
+# l=[1,2,2,2,3,4,5,5]
+# s=list(set(l))
+# print(s)
+
+
