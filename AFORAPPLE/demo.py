@@ -136,3 +136,44 @@ else :
 # 	print("Product of matrices:")
 # 	for row in result:
 # 		print(row)
+
+
+
+# Example function: Check if a list is palindromic
+# def is_palindrome(lst):
+# 	return lst == lst[::-1]
+
+#
+# sample_list = [1, 2, 3, 2, 1]
+# if is_palindrome(sample_list):
+# 	print("The list is a palindrome.")
+# else:
+# 	print("The list is not a palindrome.")
+
+
+# Example: Local and Global Variables using Function
+
+# x = 10  # Global variable
+
+# def local():
+# 	x = 5  # Local variable
+# 	print("local x =", x)
+
+# local()
+# print("global x =", x)
+
+
+
+# Example: Using 'global' keyword to modify global variable inside a function
+# x = 10  # Global variable
+
+# def modify_global():
+# 	global x
+# 	x = 5  # Modify global variable
+# 	print("Inside function, x =", x)
+
+# modify_global()
+# print("Outside function, x =", x)
+
+
+
