@@ -177,3 +177,12 @@ else :
 
 
 
+# using * c becomes keyword argument 
+def add(a, b,*,c):
+	return a + b + c
+print("* :",add(2,3,c=4))
+
+# using / a and b become positional arguments 
+def add(a, b,/,c=0):
+	return a + b + c
+print("/ :",add(2,3,c=4))
