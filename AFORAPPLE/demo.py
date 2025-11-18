@@ -254,17 +254,42 @@ else :
 
 # Linear Search Program
 
-def linear_search(arr, target):
-	for i, value in enumerate(arr):
-		if value == target:
-			return i
+# def linear_search(arr, target):
+# 	for i, value in enumerate(arr):
+# 		if value == target:
+# 			return i
+# 	return -1
+
+# arr = [5, 3, 8, 4, 2]
+# arr.append(10)
+# target = int(input("Enter the number to search: "))
+# result = linear_search(arr, target)
+# if result != -1:
+# 	print(f"{target} found at index {result}")
+# else:
+# 	print(f"{target} not found in the list")
+
+
+# Binary search
+
+def binary_search(arr, target):
+	low, high = 0, len(arr) - 1
+	arr_sorted = sorted(arr)
+	while low <= high:
+		mid = (low + high) // 2
+		if arr_sorted[mid] == target:
+			return mid 
+		elif arr_sorted[mid] < target:
+			low = mid + 1
+		else:
+			high = mid - 1
 	return -1
 
 arr = [5, 3, 8, 4, 2]
-arr.append(10)
-target = int(input("Enter the number to search: "))
-result = linear_search(arr, target)
+arr_sorted = sorted(arr)
+target = int(input("Enter the number to search (binary search): "))
+result = binary_search(arr, target)
 if result != -1:
-	print(f"{target} found at index {result}")
+	print(f"{target} found at index {result} in the sorted list {arr_sorted}")
 else:
 	print(f"{target} not found in the list")
